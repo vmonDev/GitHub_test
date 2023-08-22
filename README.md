@@ -49,7 +49,7 @@ Clonamos el repositorio de github o bitbucket ?????
 ```
 
 ## GIT ADD
-
+(añade un cambio del directorio de trabajo en el entorno de ensayo)
 
 Añadimos todos los archivos para el commit
 ```ssh
@@ -76,6 +76,7 @@ Añadimos todos los archivos dentro de un directorios
 	git add docs/
 ```
 ## GIT COMMIT
+(captura una instantánea de los cambios preparados en ese momento del proyecto)
 
 Cargar en el HEAD los cambios realizados
 ```ssh
@@ -94,6 +95,7 @@ Agregar al ultimo commit, este no se muestra como un nuevo commit en los logs. S
 	git commit --amend -m "Texto que identifique por que se hizo el commit"
 ```
 ## GIT PUSH
+(se usa para cargar contenido del repositorio local a un repositorio remoto)
 
 Subimos al repositorio
 ```ssh
@@ -104,6 +106,7 @@ Subimos un tag
 	git push --tags
 ```
 ## GIT LOG
+(Herramienta básica de Git para explorar el historial del repositorio)
 
 Muestra los logs de los commits
 ```ssh
@@ -118,6 +121,8 @@ Muestra graficos de los commits
 	git log --oneline --graph
 ```
 ## GIT DIFF
+(comando multiusos de Git que, cuando se ejecuta, lleva a cabo una función 
+para establecer las diferencias en los orígenes de datos de Git)
 
 Muestra los cambios realizados a un archivo
 ```ssh
@@ -125,6 +130,7 @@ Muestra los cambios realizados a un archivo
 	git diff --staged
 ```
 ## GIT HEAD
+(commit en el que está tu repositorio posicionado en cada momento)
 
 Saca un archivo del commit
 ```ssh
@@ -148,6 +154,7 @@ Rollback merge/commit
 	git reset --hard <commit_sha>
 ```
 ## GIT REMOTE
+(te permite crear, ver y eliminar conexiones con otros repositorios)
 
 Agregar repositorio remoto
 ```ssh
@@ -174,7 +181,7 @@ Limpiar todos los branches eliminados
 	git remote prune origin 
 ```
 ## GIT BRANCH
-
+( te permite crear, enumerar y eliminar ramas, así como cambiar su nombre)
 Crea un branch
 ```ssh
 	git branch <nameBranch>
@@ -192,6 +199,8 @@ Elimina sin preguntar
 	git branch -D <nameBranch>
 ```
 ## GIT TAG
+( concepto de Git del etiquetado ejemplo " v.10.0.1 " )
+
 
 Muestra una lista de todos los tags
 ```ssh
@@ -203,7 +212,7 @@ Crea un nuevo tags
 ```
 ## GIT REBASE
 
-Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al día con el master sin afectar al mismo
+(Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al día con el master sin afectar al mismo)
 
 Une el branch actual con el mastar, esto no se puede ver como un merge
 ```ssh
@@ -263,6 +272,10 @@ Borrar un archivo del repositorio
 ```
 
 ## Fork
+(se puede experimentar o modificar el repositorio copiado de manera libre, 
+sin que esto implique alguna afectación al repositorio y al proyecto original.
+Además, después de realizar un fork en Git, se obtendrán como resultado dos 
+repositorios iguales, pero que tienen URLs diferentes.)
 
 Descargar remote de un fork
 ```
@@ -270,6 +283,7 @@ Descargar remote de un fork
 ```
 
 Merge con master de un fork
+(se utiliza para fusionar uno o más ramas dentro de la rama que tienes activa)
 ```
 	git fetch upstream
 	git merge upstream/master
